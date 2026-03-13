@@ -1,0 +1,13 @@
+Python 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> from functools import reduce
+... 
+... numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+... 
+... squares = list(map(lambda x: x * x, numbers))
+... print("Squares using map():", squares)
+... 
+... even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+... print("Even numbers using filter():", even_numbers)
+... 
+... total_sum = reduce(lambda a, b: a + b, numbers)
